@@ -45,9 +45,21 @@ pub enum SlashingError {
     #[error("Invalid signature")]
     InvalidSignature,
 
+    /// Invalid signature verification instruction
+    #[error("Signature verification instruction is invalid")]
+    InvalidSignatureVerification,
+
     /// Legacy shreds are not supported
     #[error("Legacy shreds are not eligible for slashing")]
     LegacyShreds,
+
+    /// Missing instructions sysvar
+    #[error("Instructions sysvar is missing")]
+    MissingInstructionsSysvar,
+
+    /// Missing signature verification instruction
+    #[error("Signature verification instruction is missing")]
+    MissingSignatureVerification,
 
     /// Unable to deserialize proof buffer
     #[error("Proof buffer deserialization error")]

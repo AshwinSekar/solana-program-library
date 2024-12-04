@@ -8375,10 +8375,10 @@ dependencies = [
 name = "spl-slashing"
 version = "0.1.0"
 dependencies = [
+ "arrayvec",
  "bincode",
  "bitflags 2.6.0",
  "bytemuck",
- "generic-array 0.14.7",
  "lazy_static",
  "num-derive",
  "num-traits",
@@ -8394,6 +8394,7 @@ dependencies = [
  "solana-program",
  "solana-program-test",
  "solana-sdk",
+ "solana-signature",
  "spl-pod 0.5.0",
  "spl-record",
  "thiserror 2.0.9",
